@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ====== Favicon ====== -->
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/png"
+    />
+    <!-- ====== Boxicons ====== -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- ====== Swiper CSS ====== -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- ====== Custom CSS ====== -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>E-commerce</title>
+  </head>
+  <body>
+    <!-- ====== Header ====== -->
+    <header class="header">
+      <!-- ====== Navigation ====== -->
+      <nav class="navbar">
+        <div class="row container d-flex">
+          <div class="logo">
+            <img src="./images/logo.svg" alt="" />
+          </div>
+
+          <div class="nav-list d-flex">
+            <a href="">Inicio</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="">Sobre Nosotros</a>
+            <div class="close">
+              <i class="bx bx-x"></i>
+            </div>
+          </div>
+
+          <div class="icons d-flex">
+            <div class="icon d-flex"><i class="bx bx-search"></i></div>
+          </div>
+
+          <!-- Menu despliegue -->
+          <div class="hamburger">
+            <i class="bx bx-menu-alt-right"></i>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ====== Primera plana ====== -->
+      <div class="hero">
+        <div class="row container d-flex">
+          <div class="col">
+            <span class="subtitle">Por tiempo limitado solo para el invierno</span>
+            <h1>New Tendence</h1>
+            <p>LUCE LO MEJOR EN TU MEJOR DÍA</p>
+
+            <button class="btn" onclick="navigateToCatalog()">Explora el catálogo!</button>
+          </div>
+          <img src="./images/fashiongirl1.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <!-- ====== Top productos ====== -->
+    <section class="section collection">
+      <div class="title">
+        <span>Catálogo</span>
+        <h2>Productos mas vistos!</h2>
+      </div>
+      <div class="filters d-flex">
+        <div data-filter="Jewellery">Jewellery</div>
+        <div data-filter="Accessories">Accessories</div>
+        <div data-filter="Dresses">Dresses</div>
+        <div data-filter="Footwear">Footwear</div>
+      </div>
+
+      <div class="products container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper" id="products">
+            <div class="swiper-slide">
+              <div class="product">
+                <div class="top d-flex">
+                  <img src="./images/product-1.png" alt="" />
+                  <div class="icon d-flex">
+                    <i class="bx bxs-heart"></i>
+                  </div>
+                </div>
+                <div class="bottom">
+                  <h4>Nike Air Men’s Hoodie - Imported Hoodie Red</h4>
+                  <div class="d-flex">
+                    <div class="price">$150</div>
+                    <div class="rating">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <div class="custom-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Catalogo ====== -->
+    <section id="catalogo" class="section categories">
+      <div class="title">
+        <span>CATÁLOGO</span>
+        <h2>Colección 2023</h2>
+      </div>
+
+      <div class="products container">
+        <div class="product">
+          <div class="top d-flex">
+            <img src="./images/product-1.png" alt="" />
+            <div class="icon d-flex">
+              <i class="bx bxs-heart"></i>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="d-flex">
+              <h4>Nike Air Men’s Hoodie - Imported Hoodie Red</h4>
+              <a href="" class="btn cart-btn">Add to Cart</a>
+            </div>
+            <div class="d-flex">
+              <div class="price">$150</div>
+              <div class="rating">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="button d-flex">
+        <a class="btn loadmore">Load More</a>
+      </div>
+    </section>
+
+    <!-- ====== Statistics ====== -->
+    <section class="section statistics">
+      <div class="title">
+        <span>STATS</span>
+        <h2>Our Statistics</h2>
+      </div>
+
+      <div class="row container">
+        <div class="col">
+          <div class="icon">
+            <i class="bx bxs-check-square"></i>
+          </div>
+          <h3>Easy Order System</h3>
+          <p>Lorem Ispum is a placeholder text commomly used as a free text.</p>
+        </div>
+        <div class="col">
+          <div class="icon">
+            <i class="bx bxs-user"></i>
+          </div>
+          <h3>On Time Delievery</h3>
+          <p>Lorem Ispum is a placeholder text commomly used as a free text.</p>
+        </div>
+        <div class="col">
+          <div class="icon">
+            <i class="bx bxs-dollar-circle"></i>
+          </div>
+          <h3>Money Back Gaurantee</h3>
+          <p>Lorem Ispum is a placeholder text commomly used as a free text.</p>
+        </div>
+        <div class="col">
+          <div class="icon">
+            <i class="bx bxs-user"></i>
+          </div>
+          <h3>24/7 Customer Support</h3>
+          <p>Lorem Ispum is a placeholder text commomly used as a free text.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Footer ====== -->
+    <footer class="footer">
+      <div class="row container">
+        <div class="col">
+          <div class="logo d-flex">
+            <img src="./images/logo.svg" alt="logo" />
+          </div>
+          <p>
+            Lorem ispum is a placeholder text <br />
+            commonly used as a free text.
+          </p>
+          <div class="icons d-flex">
+            <div class="icon d-flex">
+              <i class="bx bxl-facebook"></i>
+            </div>
+            <div class="icon d-flex"><i class="bx bxl-twitter"></i></div>
+            <div class="icon d-flex"><i class="bx bxl-instagram"></i></div>
+            <div class="icon d-flex"><i class="bx bxl-youtube"></i></div>
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <h4>Contactanos!</h4>
+            <div class="d-flex">
+              <div class="icon"><i class="bx bxs-map"></i></div>
+              <span>123 Street Trafford, London, UK</span>
+            </div>
+            <div class="d-flex">
+              <div class="icon"><i class="bx bxs-envelope"></i></div>
+              <span>info@sitename.com</span>
+            </div>
+            <div class="d-flex">
+              <div class="icon"><i class="bx bxs-phone"></i></div>
+              <span>+456 789 789 001</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ====== SwiperJs ====== -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- ====== Custom Script ====== -->
+    <script src="./js/product.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
